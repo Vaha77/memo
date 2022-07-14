@@ -2,7 +2,7 @@ import React, { useCallback, useRef, useState } from 'react'
 import Todoinshert from './component/Todoinshert'
 import TodoList from './component/TodoList'
 import TotoTemplate from './component/TotoTemplate'
-import ToDoEdit from './TodoEdit'
+import ToDoEdit from './component/TodoEdit'
 
 
 const App = () => {
@@ -60,7 +60,7 @@ const App = () => {
 
     <TotoTemplate>
       <Todoinshert onInsert={onInsert}/>
-      <TodoList  todos={todos} onRemove={onRemove}/>
+      <TodoList onToggle={onToggle} todos={todos} onRemove={onRemove}/>
       {
         insertToggle && (<ToDoEdit/>)
       }
