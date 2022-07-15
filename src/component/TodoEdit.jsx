@@ -11,6 +11,7 @@ function ToDoEdit({ selectedTodo, onUpdate }) {
       //기본이벤트(새로고침) 방지
       e.preventDefault();
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [value],
   );
   
