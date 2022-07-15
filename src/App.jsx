@@ -3,6 +3,7 @@ import Todoinshert from './component/Todoinshert'
 import TodoList from './component/TodoList'
 import TotoTemplate from './component/TotoTemplate'
 import ToDoEdit from './component/TodoEdit'
+import Table from './component/Table'
 
 
 const App = () => {
@@ -66,6 +67,7 @@ const App = () => {
       {
         insertToggle && (<ToDoEdit/>)
       }
+   <Table/>
     </TotoTemplate>
   )
 }

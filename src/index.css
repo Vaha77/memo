@@ -84,5 +84,9 @@ align-items: center;
   align-items: center;
   font-size: 1.5rem;
   cursor: pointer;
-  
+}
+
+.item{
+  display: flex;
+  gap: 20px;
 }
