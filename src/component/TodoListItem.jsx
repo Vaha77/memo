@@ -33,7 +33,7 @@ import { MdCheckBox, MdCheckBoxOutlineBlank, MdModeEdit, MdRemoveCircleOutline }
           onInsertToggle();
         }}  >
             <MdModeEdit/>
-      ssssscsc  </div>
+        </div>
     </div>
   )
 }
