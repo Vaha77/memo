@@ -27,6 +27,7 @@ import { MdCheckBox, MdCheckBoxOutlineBlank, MdModeEdit, MdRemoveCircleOutline }
         </div>
         <div className="remove" onClick={() => onRemove(id)}>
             <MdRemoveCircleOutline/>
+            <MdRemoveCircleOutline/>
         </div>
         <div className='edit'onClick={() =>
         {onChangeSelectedTodo(todo)
