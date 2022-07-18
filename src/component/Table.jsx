@@ -1,3 +1,5 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable array-callback-return */
 import React, { useState } from 'react'
 import { data } from '../data/data'
 
@@ -10,8 +12,18 @@ import { data } from '../data/data'
         <input type="text" className='totoinsert'  placeholder='search' onChange={(event) => { 
             setSeachTerm(event.target.value)
         }}/>
-<h1>name</h1>
-{
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">N</th>
+      <th scope="col">Name</th>
+      <th scope="col">Img</th>
+      <th scope="col">Data</th>
+    </tr>
+  </thead>
+
+  {
     data.filter((item)=>{
         if(search == ""){
             return item
@@ -21,15 +33,24 @@ import { data } from '../data/data'
        
     }).map((item, i)=>{
         return (
-            <div className="item">
-                <p>{item.id}</p>
-                <p>{item.title}</p>
-                <p>{item.data}</p>
-            </div>
-            
+         
+            <tbody>
+    <tr>
+      <th scope="row">{item.id}</th>
+      <td>{item.title}</td>
+      
+      <td>
+          <img src={item.img} alt="" />
+      </td>
+      <td>{item.data}</td>
+    </tr>
+  </tbody>
+
         )
     })
 }
+</table>
+  
     </div>
   )
 }
